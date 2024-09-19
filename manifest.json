@@ -4,7 +4,24 @@
 	"id": "anthonyfuller.disruptorescapefix",
 	"name": "Disruptor Escape Fix",
 	"description": "Fixes Diana's voice lines not playing during The Disruptor's escape, also adds subtitles for them.",
-	"authors": ["Anthony Fuller", "Cybore"],
+	"authors": ["Anthony Fuller", "Cybore", "Sinful Monsoon", "suanjiansalt", "Cookie303728"],
+	"contentFolders": ["content/base"],
+	"incompatibilities": ["GlacierOrganisation.CommunityPatches"],
+	"loadAfter": ["invalid.earpiecevoices"],
+	"options": [
+		{
+			"type": "conditional",
+			"name": "Base Subtitles",
+			"condition": "not (\"invalid.earpiecevoices\" in config.loadOrder)",
+			"contentFolders": ["content/subtitles"]
+		},
+		{
+			"type": "conditional",
+			"name": "Earpiece Voices Compatibility Layer",
+			"condition": "\"invalid.earpiecevoices\" in config.loadOrder",
+			"contentFolders": ["content/earpiecevoices"]
+		}
+	],
 	"frameworkVersion": "2.33.20",
 	"updateCheck": "https://github.com/AnthonyFuller/disruptor-escape-fix/releases/latest/download/updates.json"
 }
