@@ -6,4 +6,4 @@ Fixes Diana's voice lines not playing during The Disruptor's escape, also adds s
 
 ---
 
-`anthonyfuller.disruptorescapefix` v0.2.0, by Anthony Fuller, Cybore. This README was automatically generated from the mod's manifest.
+`anthonyfuller.disruptorescapefix` v1.0.0, by Anthony Fuller, Cybore, Sinful Monsoon, suanjiansalt, Cookie303728. This README was automatically generated from the mod's manifest.
