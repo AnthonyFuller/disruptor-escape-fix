@@ -12,7 +12,7 @@
 		{
 			"type": "conditional",
 			"name": "Base Subtitles",
-			"condition": "not (\"invalid.earpiecevoices\" in config.loadOrder)",
+			"condition": "\"invalid.earpiecevoices\" not in config.loadOrder",
 			"contentFolders": ["content/subtitles"]
 		},
 		{
